@@ -40,6 +40,7 @@ const Contact = () => {
       );
       
       if (shouldOpenWhatsApp) {
+        e.preventDefault();
         const phoneNumber = "919949565677";
         const message = "Hi Jagadeesh, I just sent you an email!";
         window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');

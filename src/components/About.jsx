@@ -38,7 +38,7 @@ import TechModel from "./TechModel";
 
 const About = () => {
   const achievementsContainerRef = useRef(null);
-const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const [selectedTech, setSelectedTech] = useState(null);
   const [selectedAchievement, setSelectedAchievement] = useState(null);
   const controls = useAnimation();
@@ -63,20 +63,20 @@ const [isHovered, setIsHovered] = useState(false);
       transition: { duration: 0.8, ease: "easeOut" }
     }
   };
+
   useEffect(() => {
     const container = achievementsContainerRef.current;
     if (!container) return;
   
     let animationId;
     let scrollAmount = 0;
-    const speed = 0.5; // Adjust speed as needed (lower = slower)
+    const speed = 0.5;
   
     const scroll = () => {
       if (!isHovered && container) {
         scrollAmount += speed;
         container.scrollLeft = scrollAmount;
         
-        // Reset scroll position when reaching the end for infinite effect
         if (scrollAmount >= container.scrollWidth / 2) {
           scrollAmount = 0;
           container.scrollLeft = 0;
@@ -92,7 +92,6 @@ const [isHovered, setIsHovered] = useState(false);
     };
   }, [isHovered]);
 
-  // Tech stack data remains the same
   const techStack = [
     { 
       name: "React", 
@@ -102,7 +101,6 @@ const [isHovered, setIsHovered] = useState(false);
       projects: "Built 10+ applications using React with complex state management",
       image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     },
-
     { 
       name: "Node.js", 
       icon: <FaNodeJs className="text-green-500" />, 
@@ -119,7 +117,6 @@ const [isHovered, setIsHovered] = useState(false);
       projects: "Migrated multiple projects from JavaScript to TypeScript",
       image: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     },
-    
     { 
       name: "MongoDB", 
       icon: <FaDatabase className="text-green-600" />, 
@@ -129,133 +126,124 @@ const [isHovered, setIsHovered] = useState(false);
       image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     },
     {
-        name: "HTML",
-        icon: <FaHtml5 className="text-orange-500" />,
-        color: "bg-orange-100",
-        description: "Semantic and accessible markup for structuring modern web applications.",
-        projects: "Created 30+ responsive layouts and landing pages",
-        image: "https://www.webcup.fr/wp-content/uploads/2021/10/atelier-html-css-association-webcup.jpg"
-      },
-      {
-        name: "CSS",
-        icon: <FaCss3Alt className="text-blue-500" />,
-        color: "bg-blue-100",
-        description: "Styling techniques with Flexbox, Grid, animations, and responsive design.",
-        projects: "Styled numerous websites with dynamic and consistent design systems",
-        image: "https://www.hostitsmart.com/blog/wp-content/uploads/2024/12/Example-of-css.jpg"
-      },
-      {
-        name: "TailwindCSS",
-        icon: <SiTailwindcss className="text-cyan-500" />,
-        color: "bg-cyan-100",
-        description: "Utility-first CSS framework for rapid UI development with consistent design.",
-        projects: "Built full-featured web apps with modern, responsive Tailwind components",
-        image: "https://www.animaapp.com/blog/wp-content/uploads/2023/08/Figma-to-Tailwind-768x539.png"
-      },
-      {
-        name: "Bootstrap",
-        icon: <FaBootstrap className="text-purple-500" />,
-        color: "bg-purple-100",
-        description: "Responsive design and UI components using the Bootstrap framework.",
-        projects: "Developed dashboards and prototypes using Bootstrap utilities and components",
-        image: "https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/da60ab70ac523deb1dcacc6a5dfdeb9ad2b1a268"
-      },
-      {
-        name: "JavaScript",
-        icon: <FaJsSquare className="text-yellow-400" />,
-        color: "bg-yellow-100",
-        description: "Proficient in ES6+, asynchronous programming, and DOM manipulation.",
-        projects: "Implemented interactive features in web apps and solved algorithm challenges",
-        image: "https://data-flair.training/blogs/wp-content/uploads/sites/2/2019/07/Features-of-JavaScript.jpg"
-      },
-      {
-        name: "TypeScript",
-        icon: <SiTypescript className="text-blue-600" />,
-        color: "bg-blue-100",
-        description: "Typed superset of JavaScript for scalable and maintainable applications.",
-        projects: "Converted JS codebases to TypeScript and developed type-safe React apps",
-        image: "https://www.digitalocean.com/cdn-cgi/image/quality=75,width=1920/https://www.digitalocean.com/api/static-content/v1/images?src=https%3A%2F%2Fcommunity-cdn-digitalocean-com.global.ssl.fastly.net%2FUKmRMCLDKAKNW4Wb5DeZeCQY&raw=1"
-      },
-      {
-        name: "Python",
-        icon: <FaPython className="text-yellow-500" />,
-        color: "bg-yellow-100",
-        description: "Experience in scripting, automation, data analysis, and backend logic.",
-        projects: "Built CLI tools, APIs, and scripts for automation and productivity",
-        image: "https://www.aezion.com/wp-content/uploads/2020/06/Python_language.jpg"
-      }
-  
+      name: "HTML",
+      icon: <FaHtml5 className="text-orange-500" />,
+      color: "bg-orange-100",
+      description: "Semantic and accessible markup for structuring modern web applications.",
+      projects: "Created 30+ responsive layouts and landing pages",
+      image: "https://www.webcup.fr/wp-content/uploads/2021/10/atelier-html-css-association-webcup.jpg"
+    },
+    {
+      name: "CSS",
+      icon: <FaCss3Alt className="text-blue-500" />,
+      color: "bg-blue-100",
+      description: "Styling techniques with Flexbox, Grid, animations, and responsive design.",
+      projects: "Styled numerous websites with dynamic and consistent design systems",
+      image: "https://www.hostitsmart.com/blog/wp-content/uploads/2024/12/Example-of-css.jpg"
+    },
+    {
+      name: "TailwindCSS",
+      icon: <SiTailwindcss className="text-cyan-500" />,
+      color: "bg-cyan-100",
+      description: "Utility-first CSS framework for rapid UI development with consistent design.",
+      projects: "Built full-featured web apps with modern, responsive Tailwind components",
+      image: "https://www.animaapp.com/blog/wp-content/uploads/2023/08/Figma-to-Tailwind-768x539.png"
+    },
+    {
+      name: "Bootstrap",
+      icon: <FaBootstrap className="text-purple-500" />,
+      color: "bg-purple-100",
+      description: "Responsive design and UI components using the Bootstrap framework.",
+      projects: "Developed dashboards and prototypes using Bootstrap utilities and components",
+      image: "https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/da60ab70ac523deb1dcacc6a5dfdeb9ad2b1a268"
+    },
+    {
+      name: "JavaScript",
+      icon: <FaJsSquare className="text-yellow-400" />,
+      color: "bg-yellow-100",
+      description: "Proficient in ES6+, asynchronous programming, and DOM manipulation.",
+      projects: "Implemented interactive features in web apps and solved algorithm challenges",
+      image: "https://data-flair.training/blogs/wp-content/uploads/sites/2/2019/07/Features-of-JavaScript.jpg"
+    },
+    {
+      name: "TypeScript",
+      icon: <SiTypescript className="text-blue-600" />,
+      color: "bg-blue-100",
+      description: "Typed superset of JavaScript for scalable and maintainable applications.",
+      projects: "Converted JS codebases to TypeScript and developed type-safe React apps",
+      image: "https://www.digitalocean.com/cdn-cgi/image/quality=75,width=1920/https://www.digitalocean.com/api/static-content/v1/images?src=https%3A%2F%2Fcommunity-cdn-digitalocean-com.global.ssl.fastly.net%2FUKmRMCLDKAKNW4Wb5DeZeCQY&raw=1"
+    },
+    {
+      name: "Python",
+      icon: <FaPython className="text-yellow-500" />,
+      color: "bg-yellow-100",
+      description: "Experience in scripting, automation, data analysis, and backend logic.",
+      projects: "Built CLI tools, APIs, and scripts for automation and productivity",
+      image: "https://www.aezion.com/wp-content/uploads/2020/06/Python_language.jpg"
+    }
   ];
 
   const education = [
-     {
-          degree: "Bachelor of Technology in Computer Science",
-          University :"Sri Krishnadevaraya University",
-          institution: "JCNRM Degree College",
-          year: "2020 - 2024",
-          icon: <FaUniversity className="text-purple-500" />,
-          description: "Specialized in Web Technologies and Software Architecture with 7-%",
-          highlights: [
-            "Focus on   COMPUTER SCIENCE,ELECTRONICS,MATHEMATICS",
-            
-          ],
-        
-          image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-        },
-        {
-          degree: "Intermediate (12th Grade)",
-          institution: "JCNRM Junior College",
-          year: "2018 - 2020",
-          icon: <FaGraduationCap className="text-blue-500" />,
-          description: "Focus on Mathematics and Computer Science with 6.34G.PA",
-          highlights: [
-            "mATHEMATICS , PHYSICS,CHEMISTRY",
-            
-          ],
-          image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-        }
+    {
+      degree: "Bachelor of Technology in Computer Science",
+      University: "Sri Krishnadevaraya University",
+      institution: "JCNRM Degree College",
+      year: "2020 - 2024",
+      icon: <FaUniversity className="text-purple-500" />,
+      description: "Specialized in Web Technologies and Software Architecture with 7-%",
+      highlights: [
+        "Focus on COMPUTER SCIENCE,ELECTRONICS,MATHEMATICS",
+      ],
+      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+    },
+    {
+      degree: "Intermediate (12th Grade)",
+      institution: "JCNRM Junior College",
+      year: "2018 - 2020",
+      icon: <FaGraduationCap className="text-blue-500" />,
+      description: "Focus on Mathematics and Computer Science with 6.34G.PA",
+      highlights: [
+        "mATHEMATICS , PHYSICS,CHEMISTRY",
+      ],
+      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+    }
   ];
 
   const achievements = [
     {
-          title: "Web Development Internship",
-          description: "Gained practical experience in web development and agile methodologies ",
-          icon: <FaLaptopCode className="text-indigo-500" />,
-          count: "1500+"
-        },
-        {
-          title: "Python Internship",
-          description: "During python internship learned fundamentals of python programming and data structures",
-          icon: <FaAward className="text-red-500" />,
-          count: "3 Months"
-        },
-        {
-          title: "6000+ Hours Coding practice",
-          description: "Intensive hands-on development experience across multiple domains",
-          icon: <FaLaptopCode className="text-indigo-500" />,
-          count: "1500+"
-        },
-        
-        {
-          title: "15+ Projects",
-          description: "Diverse portfolio including complex full-stack applications",
-          icon: <FaProjectDiagram className="text-purple-500" />,
-          count: "15+"
-        },
-        {
-          title: "Problem Solver",
-          description: "Exceptional algorithmic thinking with 500+ LeetCode solutions",
-          icon: <FaBrain className="text-yellow-500" />,
-          
-        },
-        {
-          title: "Quick Leaner",
-          description: "Adaptable to new technologies and frameworks with 100+ hours of online courses",
-          icon: <FaRocket className="text-green-500" />,
-         
-          
-        }
-       
+      title: "Web Development Internship",
+      description: "Gained practical experience in web development and agile methodologies",
+      icon: <FaLaptopCode className="text-indigo-500" />,
+      count: "1500+"
+    },
+    {
+      title: "Python Internship",
+      description: "During python internship learned fundamentals of python programming and data structures",
+      icon: <FaAward className="text-red-500" />,
+      count: "3 Months"
+    },
+    {
+      title: "6000+ Hours Coding practice",
+      description: "Intensive hands-on development experience across multiple domains",
+      icon: <FaLaptopCode className="text-indigo-500" />,
+      count: "1500+"
+    },
+    {
+      title: "15+ Projects",
+      description: "Diverse portfolio including complex full-stack applications",
+      icon: <FaProjectDiagram className="text-purple-500" />,
+      count: "15+"
+    },
+    {
+      title: "Problem Solver",
+      description: "Exceptional algorithmic thinking with 500+ LeetCode solutions",
+      icon: <FaBrain className="text-yellow-500" />,
+    },
+    {
+      title: "Quick Leaner",
+      description: "Adaptable to new technologies and frameworks with 100+ hours of online courses",
+      icon: <FaRocket className="text-green-500" />,
+    }
   ];
 
   const collegeMemories = [
@@ -273,7 +261,7 @@ const [isHovered, setIsHovered] = useState(false);
     },
     {
       title: "Web Development Internship",
-      description:"Gained practical experience in web development and agile methodologies",
+      description: "Gained practical experience in web development and agile methodologies",
       image: "https://admin.12grids.com/uploads/blogs/original_cover_images/Webp/benefits-of-custom-web-development-and-web-design-12grids.webp",
       year: "2023"
     },
@@ -293,10 +281,14 @@ const [isHovered, setIsHovered] = useState(false);
     setSelectedTech(null);
   };
 
+  const closeAchievementModal = () => {
+    setSelectedAchievement(null);
+  };
+
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100 px-4 sm:px-6 py-12 md:px-20 lg:px-40 overflow-hidden">
       <div ref={ref} className="max-w-7xl mx-auto">
-        {/* Personal Intro Card - Made responsive */}
+        {/* Personal Intro Card */}
         <motion.div
           initial="hidden"
           animate={controls}
@@ -313,10 +305,9 @@ const [isHovered, setIsHovered] = useState(false);
             >
               <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[32rem] rounded-3xl overflow-hidden border-4 border-blue-500/30 shadow-2xl z-10 transform transition duration-500 group-hover:shadow-blue-500/20">
                 <img 
-                  src="https://media-hosting.imagekit.io/e195aeebd1284614/WhatsApp%20Image%202025-04-14%20at%2014.26.15_a1165c67.jpg?Expires=1839402081&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=VL-~9nI-wKhzuXgrQA9ES1HfPuNXTIEFx4RXHfgBmbDL7vFiax3E0nnFtKLUmBZPMJ2L4E9oEzjuIpRfq7tLvB0Q~0BAMQonwLEFnKN6ITpvyLVZDtwowD4aedFxOOZ~RJggS3hASrn~AlCB7bPuTCe8nFUr1w-t7Jf7WPQ2m0yrb0jN1qFm8xKlGUt9lBsGU-yxq8ux2kkxwGGB4z7v0We7GH~oaCf2SJj1Y2dxLdTx0A9zWnr8hWPgRzgqFjtIGsWpH5HHoufXz9M1kr~fy187-uBonEHMuSMjgV~7QOD5uM7IqE-xB0~wjHPA~hbbILokHDL90k8jCXLxBK~fyw__" // Replace with your actual image
+                  src="https://media-hosting.imagekit.io/e195aeebd1284614/WhatsApp%20Image%202025-04-14%20at%2014.26.15_a1165c67.jpg?Expires=1839402081&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=VL-~9nI-wKhzuXgrQA9ES1HfPuNXTIEFx4RXHfgBmbDL7vFiax3E0nnFtKLUmBZPMJ2L4E9oEzjuIpRfq7tLvB0Q~0BAMQonwLEFnKN6ITpvyLVZDtwowD4aedFxOOZ~RJggS3hASrn~AlCB7bPuTCe8nFUr1w-t7Jf7WPQ2m0yrb0jN1qFm8xKlGUt9lBsGU-yxq8ux2kkxwGGB4z7v0We7GH~oaCf2SJj1Y2dxLdTx0A9zWnr8hWPgRzgqFjtIGsWpH5HHoufXz9M1kr~fy187-uBonEHMuSMjgV~7QOD5uM7IqE-xB0~wjHPA~hbbILokHDL90k8jCXLxBK~fyw__"
                   alt="Jagadeesh Vanganooru"
                   className="w-full h-full object-cover"
-                  onClick={(e) => e.preventDefault()}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 via-blue-800/30 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-4 sm:p-8">
@@ -370,75 +361,75 @@ const [isHovered, setIsHovered] = useState(false);
           </div>
         </motion.div>
 
-        {/* Achievements - Made mobile friendly */}
+        {/* Achievements */}
         <motion.div
-  initial="hidden"
-  animate={controls}
-  variants={fadeIn}
-  transition={{ delay: 0.3 }}
-  className="mb-16 sm:mb-24"
->
-  <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-16">
-    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
-      My Achievements
-    </span>
-  </h2>
-  
-  <div 
-    className="relative"
-    onMouseEnter={() => setIsHovered(true)}
-    onMouseLeave={() => setIsHovered(false)}
-  >
-    {/* Mobile scroll buttons */}
-    <div className="sm:hidden flex justify-between items-center mb-4 px-4">
-      <button 
-        onClick={() => {
-          const container = achievementsContainerRef.current;
-          if (container) container.scrollLeft -= 200;
-        }}
-        className="p-2 rounded-full text-white bg-gray-700 hover:bg-gray-600 transition-colors"
-      >
-        <FaChevronLeft />
-      </button>
-      <button 
-        onClick={() => {
-          const container = achievementsContainerRef.current;
-          if (container) container.scrollLeft += 200;
-        }}
-        className="p-2 rounded-full text-white bg-gray-700 hover:bg-gray-600 transition-colors"
-      >
-        <FaChevronRight />
-      </button>
-    </div>
-
-    <div 
-      ref={achievementsContainerRef}
-      className="overflow-x-auto pb-4 hide-scrollbar"
-    >
-      <div className="flex space-x-4 px-4 w-max">
-        {[...achievements, ...achievements].map((item, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.1 * index }}
-            whileHover={{ scale: 1.05, y: -5 }}
-            onClick={() => setSelectedAchievement(item)}
-            className="flex-shrink-0 w-64 bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl shadow-lg border border-gray-700 hover:shadow-xl transition-all duration-300 group cursor-pointer"
+          initial="hidden"
+          animate={controls}
+          variants={fadeIn}
+          transition={{ delay: 0.3 }}
+          className="mb-16 sm:mb-24"
+        >
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-16">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+              My Achievements
+            </span>
+          </h2>
+          
+          <div 
+            className="relative"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
           >
-            <div className="text-4xl sm:text-5xl mb-4 group-hover:text-blue-400 transition-colors">
-              {item.icon}
+            <div className="sm:hidden flex justify-between items-center mb-4 px-4">
+              <button 
+                onClick={() => {
+                  const container = achievementsContainerRef.current;
+                  if (container) container.scrollLeft -= 200;
+                }}
+                className="p-2 rounded-full text-white bg-gray-700 hover:bg-gray-600 transition-colors"
+              >
+                <FaChevronLeft />
+              </button>
+              <button 
+                onClick={() => {
+                  const container = achievementsContainerRef.current;
+                  if (container) container.scrollLeft += 200;
+                }}
+                className="p-2 rounded-full text-white bg-gray-700 hover:bg-gray-600 transition-colors"
+              >
+                <FaChevronRight />
+              </button>
             </div>
-            <div className="text-2xl sm:text-4xl font-bold text-blue-400 mb-2">{item.count}</div>
-            <h3 className="text-lg sm:text-xl font-bold text-white mb-2">{item.title}</h3>
-            <p className="text-sm sm:text-base text-gray-400">{item.description}</p>
-          </motion.div>
-        ))}
-      </div>
-    </div>
-  </div>
-</motion.div>
-        {/* Education Section - Made responsive */}
+
+            <div 
+              ref={achievementsContainerRef}
+              className="overflow-x-auto pb-4 hide-scrollbar"
+            >
+              <div className="flex space-x-4 px-4 w-max">
+                {[...achievements, ...achievements].map((item, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.1 * index }}
+                    whileHover={{ scale: 1.05, y: -5 }}
+                    onClick={() => setSelectedAchievement(item)}
+                    className="flex-shrink-0 w-64 bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl shadow-lg border border-gray-700 hover:shadow-xl transition-all duration-300 group cursor-pointer"
+                  >
+                    <div className="text-4xl sm:text-5xl mb-4 group-hover:text-blue-400 transition-colors">
+                      {item.icon}
+                    </div>
+                    <div className="text-2xl sm:text-4xl font-bold text-blue-400 mb-2">{item.count}</div>
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-2">{item.title}</h3>
+                    <p className="text-sm sm:text-base text-gray-400">{item.description}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Education Section */}
         <motion.div
           initial="hidden"
           animate={controls}
@@ -505,7 +496,7 @@ const [isHovered, setIsHovered] = useState(false);
           </div>
         </motion.div>
 
-        {/* College Memories - Made responsive */}
+        {/* College Memories */}
         <motion.div
           initial="hidden"
           animate={controls}
@@ -545,7 +536,7 @@ const [isHovered, setIsHovered] = useState(false);
           </div>
         </motion.div>
 
-        {/* Tech Stack - Made responsive */}
+        {/* Tech Stack */}
         <motion.div
           initial="hidden"
           animate={controls}
@@ -585,7 +576,7 @@ const [isHovered, setIsHovered] = useState(false);
           </div>
         </motion.div>
 
-        {/* Call to Action - Made responsive */}
+        {/* Call to Action Section */}
         <motion.div
           initial="hidden"
           animate={controls}
@@ -629,17 +620,21 @@ const [isHovered, setIsHovered] = useState(false);
         <TechModel tech={selectedTech} onClose={closeTechModal} />
       )}
 
-      {/* Achievement Modal - Made responsive */}
+      {/* Achievement Modal */}
       {selectedAchievement && (
-        <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4"
+          onClick={closeAchievementModal}
+        >
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             className="bg-gray-800 rounded-xl sm:rounded-2xl max-w-md w-full p-6 sm:p-8 relative border border-gray-700"
+            onClick={(e) => e.stopPropagation()}
           >
             <button 
-              onClick={() => setSelectedAchievement(null)}
+              onClick={closeAchievementModal}
               className="absolute top-2 right-2 sm:top-4 sm:right-4 text-gray-400 hover:text-white"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -658,7 +653,6 @@ const [isHovered, setIsHovered] = useState(false);
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-3 sm:mb-4">
                   {selectedAchievement.title}
                 </h3>
-                
                 <p className="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6">
                   {selectedAchievement.description}
                 </p>

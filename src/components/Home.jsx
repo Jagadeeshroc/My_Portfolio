@@ -15,6 +15,7 @@ const roles = [
 ];
 
 const getRandomColor = () => {
+    e.preventDefault();
     const colors = [
         '#ff4d4d', '#4dd2ff', '#33cc33', '#ffcc00', '#cc66ff', '#00cc99', '#ff66b2'
     ];
@@ -25,6 +26,7 @@ const Home = () => {
     const [color, setColor] = useState(getRandomColor());
     
     const handleDownload = () => {
+        e.preventDefault();
         // For Create React App or Vite deployments
         const publicUrl = process.env.PUBLIC_URL || '';
         const link = document.createElement('a');

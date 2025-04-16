@@ -2,6 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const TechModal = ({ tech, onClose }) => {
+  const openTechModal = (tech, e) => {  // Add event parameter
+    e?.stopPropagation();  // Optional chaining in case event isn't passed
+    e?.preventDefault();
+    setSelectedTech(tech);
+  };
   return (
     <motion.div 
       initial={{ opacity: 0 }}
@@ -15,7 +20,10 @@ const TechModal = ({ tech, onClose }) => {
         animate={{ scale: 1, y: 0 }}
         exit={{ scale: 0.9, y: 50 }}
         className="relative bg-gray-900 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto border border-gray-700 shadow-2xl"
-        onClick={(e) => e.stopPropagation()}
+        onClick={(e) => {
+          e.stopPropagation();
+          openTechModal(tech, e);
+        }}
       >
         <button 
           onClick={onClose}
