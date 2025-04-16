@@ -4,31 +4,29 @@ import { FaBriefcase, FaGraduationCap, FaCode, FaTools, FaEnvelope, FaPhone, FaM
 const Resume = () => {
   // Resume data - replace with your actual information
   const resumeData = {
-    name: "Alex Johnson",
-    title: "Senior Software Engineer",
+    name: "Jagadeesh Vanganooru",
+    title: "Aspring Software Developer",
     contact: {
-      email: "alex.johnson@example.com",
-      phone: "(123) 456-7890",
-      location: "San Francisco, CA",
-      linkedin: "linkedin.com/in/alexjohnson",
-      github: "github.com/alexjohnson"
+      email: "jagadeeshvanganooru.com",
+      phone: "9949565677",
+      location: "Ananthapur, India",
+      linkedin: "https://www.linkedin.com/in/jagadeesh-vanganooru-117872336/",
+      github: "github.com/jagadeeshroc"
     },
-    summary: "Full-stack developer with 5+ years of experience building scalable web applications. Specialized in React, Node.js, and cloud architecture. Passionate about creating efficient, user-friendly solutions.",
+    summary: "Full-stack developer with 1+ years of practical building scalable web applications. Specialized in React, Node.js, and cloud architecture. Passionate about creating efficient, user-friendly solutions.",
     experience: [
       {
-        position: "Senior Software Engineer",
-        company: "TechSolutions Inc.",
-        duration: "2020 - Present",
+        position: "Python Program Internship",
+        company: "G-tech group of Education.",
+        duration: "2023",
         responsibilities: [
-          "Led development of customer portal using React and Node.js",
-          "Implemented CI/CD pipeline reducing deployment time by 40%",
-          "Mentored junior developers and conducted code reviews"
+          "Python fundamentals include variables, data types, control flow (if, for, while), functions", "basic data structures like lists, tuples, sets, and dictionaries."," Indentation defines code blocks."," Python’s simplicity, readability, and large standard library make it ideal for beginners and pros alike."
         ]
       },
       {
-        position: "Software Developer",
-        company: "WebCraft LLC",
-        duration: "2018 - 2020",
+        position: "Web Development Internship",
+        company: "Ar-technologies",
+        duration: "2023",
         responsibilities: [
           "Developed responsive web applications using modern JavaScript frameworks",
           "Collaborated with UX team to improve customer experience",
@@ -38,14 +36,14 @@ const Resume = () => {
     ],
     education: [
       {
-        degree: "M.Sc. Computer Science",
-        institution: "Stanford University",
-        year: "2018"
+        degree: "B.Sc. Computer Science",
+        institution: "Sri Krishnadevaraya University",
+        year: "2024"
       },
       {
-        degree: "B.Sc. Software Engineering",
-        institution: "University of California",
-        year: "2016"
+        intermediate: "MPC",
+        institution: "JCNRM Jr college",
+        year: "2020"
       }
     ],
     skills: {
@@ -56,13 +54,21 @@ const Resume = () => {
       {
         name: "E-commerce Platform",
         description: "Built a full-stack e-commerce solution with React frontend and Node.js backend",
-        technologies: ["React", "Node.js", "MongoDB", "Stripe API"]
+        technologies: ["React", "Node.js", "MongoDB", "Rest API"]
       },
       {
         name: "Task Management App",
         description: "Developed a collaborative task management application with real-time updates",
-        technologies: ["React", "Firebase", "Material UI"]
-      }
+        technologies: ["React",  "Tailwindcss","Material UI", "Node.js", "MongoDB", "Rest API"]
+      },{
+        name: "Call Management App",
+        description: "Developed a collaborative task management application with real-time updates",
+        technologies: ["React", "Tailwindcss","Material UI","Node.js", "MongoDB", "Rest API"]
+      },{
+        name: "Achyuta (jobby) App",
+        description: "Developed a collaborative task management application with real-time updates",
+        technologies: ["React", "Tailwindcss", "Material UI","Node.js", "MongoDB", "Rest API"]
+      },
     ]
   };
 

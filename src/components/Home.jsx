@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 import { FaGithub, FaLinkedin, FaTwitter, FaFileDownload } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
@@ -64,10 +65,12 @@ const Home = () => {
                         
                         <div className="flex gap-3 sm:gap-4 flex-wrap">
                             <button 
-                                onClick={() => window.location.href = '/contact'}
+                               
                                 className="px-4 py-2 sm:px-6 sm:py-3 rounded-full font-semibold text-white border-2 border-transparent hover:border-blue-500 transition-all duration-300 flex items-center gap-2 gradient-bg-animate hover:text-blue-100 cursor-pointer text-sm sm:text-base"
                             >
+                                <Link to='/contact'>
                                 Hire Me
+                                </Link>
                             </button>
 
                             <button 
