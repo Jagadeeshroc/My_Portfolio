@@ -316,6 +316,7 @@ const [isHovered, setIsHovered] = useState(false);
                   src="https://media-hosting.imagekit.io/e195aeebd1284614/WhatsApp%20Image%202025-04-14%20at%2014.26.15_a1165c67.jpg?Expires=1839402081&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=VL-~9nI-wKhzuXgrQA9ES1HfPuNXTIEFx4RXHfgBmbDL7vFiax3E0nnFtKLUmBZPMJ2L4E9oEzjuIpRfq7tLvB0Q~0BAMQonwLEFnKN6ITpvyLVZDtwowD4aedFxOOZ~RJggS3hASrn~AlCB7bPuTCe8nFUr1w-t7Jf7WPQ2m0yrb0jN1qFm8xKlGUt9lBsGU-yxq8ux2kkxwGGB4z7v0We7GH~oaCf2SJj1Y2dxLdTx0A9zWnr8hWPgRzgqFjtIGsWpH5HHoufXz9M1kr~fy187-uBonEHMuSMjgV~7QOD5uM7IqE-xB0~wjHPA~hbbILokHDL90k8jCXLxBK~fyw__" // Replace with your actual image
                   alt="Jagadeesh Vanganooru"
                   className="w-full h-full object-cover"
+                  onClick={(e) => e.preventDefault()}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 via-blue-800/30 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-4 sm:p-8">
