@@ -40,7 +40,6 @@ const ProjectDetails = () => {
     'Firebase': <SiFirebase className="w-6 h-6 text-amber-500" />,
     'Redux': <SiRedux className="w-6 h-6 text-purple-500" />,
     'TypeScript': <SiTypescript className="w-6 h-6 text-blue-500" />,
-    'GraphQL': <SiGraphql className="w-6 h-6 text-pink-500" />,
     'Tailwind CSS': <SiTailwindcss className="w-6 h-6 text-cyan-300" />,
     'JavaScript': <SiJavascript className="w-6 h-6 text-yellow-400" />,
     'Python': <SiPython className="w-6 h-6 text-blue-400" />
@@ -88,16 +87,7 @@ const ProjectDetails = () => {
                 alt={project.title} 
                 className="w-full h-full object-cover group-hover:opacity-90 transition-opacity duration-300"
               />
-              {project.video && (
-                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <button 
-                    onClick={() => window.open(project.video, '_blank')}
-                    className="flex items-center justify-center w-16 h-16 rounded-full bg-cyan-600 hover:bg-cyan-700 transition-all duration-300 transform hover:scale-110"
-                  >
-                    <FiPlay className="w-6 h-6 text-white ml-1" />
-                  </button>
-                </div>
-              )}
+              
             </motion.div>
             
             {/* Additional Images Grid */}

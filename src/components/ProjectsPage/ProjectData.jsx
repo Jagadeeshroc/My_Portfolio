@@ -28,8 +28,9 @@ export const projects = [
     title: "Task Management App",
     description: "A productivity application for organizing tasks with drag-and-drop functionality.",
     technologies: ["React", "Firebase", "Redux", "Material UI"],
+    video: "https://youtu.be/vETF_078JRE?si=RiPJj5LidyzHv9la",
     images: [
-      "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1",
+      "https://elements-resized.envatousercontent.com/elements-cover-images/cc6f0211-6889-4eda-9fd0-053df90b94ab?w=2038&cf_fit=scale-down&q=85&format=auto&s=9f6941d32849d9b59e9a1ef4f369c609e18afac80e51b0ef8a79e7227fdac144",
       "https://images.unsplash.com/photo-1517842645767-c639042777db",
       "https://images.unsplash.com/photo-1544717305-2782549b5136"
     ],
@@ -44,8 +45,9 @@ export const projects = [
     title: "Achyuta Platform Future of Hiring(jobby App) ",
     description: "A productivity application for organizing tasks with drag-and-drop functionality.",
     technologies: ["React", "Firebase", "Redux", "Material UI"],
+    video: "https://youtu.be/vETF_078JRE?si=RiPJj5LidyzHv9la",
     images: [
-      "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1",
+      "https://images.ui8.net/uploads/detail-3_1671703364137.png",
       "https://images.unsplash.com/photo-1517842645767-c639042777db",
       "https://images.unsplash.com/photo-1544717305-2782549b5136"
     ],
@@ -61,8 +63,9 @@ export const projects = [
     title: "calls Management App",
     description: "A productivity application for organizing tasks with drag-and-drop functionality.",
     technologies: ["React", "Firebase", "Redux", "Material UI"],
+    video: "https://youtu.be/vETF_078JRE?si=RiPJj5LidyzHv9la",
     images: [
-      "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1",
+      "https://cdn.techjockey.com/blog/wp-content/uploads/2021/01/15-Best-Sales-Call-Management-Apps-for-Android-iPhone_-banner.jpg?d=840",
       "https://images.unsplash.com/photo-1517842645767-c639042777db",
       "https://images.unsplash.com/photo-1544717305-2782549b5136"
     ],
