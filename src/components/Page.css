@@ -1,0 +1,63 @@
+/* Snow Flower Animation - Responsive Version */
+.snow-flower {
+    position: fixed;
+    top: -10%;
+    z-index: 0;
+    color: rgba(255, 255, 255, 0.7);
+    user-select: none;
+    pointer-events: none;
+    animation: falling linear infinite;
+    font-size: 1rem;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  
+  @keyframes falling {
+    0% {
+      transform: translate3d(var(--left-ini), 0, 0) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate3d(var(--left-end), 110vh, 0) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  /* Performance optimization for mobile */
+  @media (max-width: 768px) {
+    .snow-flower {
+      /* Reduce animation details for mobile */
+      animation-duration: calc(var(--duration) * 1.5);
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .snow-flower {
+      /* Further simplify for very small devices */
+      animation: falling-mobile linear infinite;
+      font-size: 0.6rem;
+    }
+  
+    @keyframes falling-mobile {
+      0% {
+        transform: translate3d(var(--left-ini), 0, 0);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        transform: translate3d(var(--left-end), 110vh, 0);
+        opacity: 0;
+      }
+    }
+  }
