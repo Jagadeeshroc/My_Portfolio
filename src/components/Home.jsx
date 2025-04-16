@@ -25,13 +25,15 @@ const Home = () => {
     const [color, setColor] = useState(getRandomColor());
     
     const handleDownload = () => {
+        // For Create React App or Vite deployments
+        const publicUrl = process.env.PUBLIC_URL || '';
         const link = document.createElement('a');
-        link.href = '/JagadeeshResume@5.pdf';
-        link.download = 'JagadeeshResume@5.pdf';
+        link.href = `${publicUrl}/JagadeeshResume@5.pdf`;
+        link.download = 'JagadeeshResume.pdf'; // Simplified filename
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-    };
+      };
 
     return (
         <section id="home" className="min-h-screen flex items-center px-4 sm:px-6 md:px-10 py-16 bg-gradient-to-br from-gray-50 to-gray-200 text-gray-800">
