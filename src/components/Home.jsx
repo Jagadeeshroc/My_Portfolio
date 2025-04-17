@@ -15,10 +15,11 @@ const roles = [
 ];
 
 const getRandomColor = () => {
-    e.preventDefault();
+    
     const colors = [
         '#ff4d4d', '#4dd2ff', '#33cc33', '#ffcc00', '#cc66ff', '#00cc99', '#ff66b2'
     ];
+   
     return colors[Math.floor(Math.random() * colors.length)];
 };
 
@@ -26,17 +27,13 @@ const Home = () => {
     const [color, setColor] = useState(getRandomColor());
     
     const handleDownload = () => {
-        e.preventDefault();
-        // For Create React App or Vite deployments
-        const publicUrl = process.env.PUBLIC_URL || '';
         const link = document.createElement('a');
-        link.href = `${publicUrl}/JagadeeshResume@5.pdf`;
-        link.download = 'JagadeeshResume.pdf'; // Simplified filename
+        link.href = '/JagadeeshResume@5.pdf'; // Direct path from public folder
+        link.download = 'JagadeeshResume.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-      };
-
+    };
     return (
         <section id="home" className="min-h-screen flex items-center px-4 sm:px-6 md:px-10 py-16 bg-gradient-to-br from-gray-50 to-gray-200 text-gray-800">
             <div className="w-full mx-auto max-w-7xl">
