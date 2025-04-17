@@ -30,7 +30,7 @@ export const projects = [
     technologies: ["React", "Firebase", "Redux", "Material UI"],
     video: "https://youtu.be/vETF_078JRE?si=RiPJj5LidyzHv9la",
     images: [
-      "https://elements-resized.envatousercontent.com/elements-cover-images/cc6f0211-6889-4eda-9fd0-053df90b94ab?w=2038&cf_fit=scale-down&q=85&format=auto&s=9f6941d32849d9b59e9a1ef4f369c609e18afac80e51b0ef8a79e7227fdac144",
+      "https://cdn.prod.website-files.com/60c0cec90f57824353f55893/629897cfc77f0da4e04396c7_Task%20Management%20Blog%20(1).png",
       "https://images.unsplash.com/photo-1517842645767-c639042777db",
       "https://images.unsplash.com/photo-1544717305-2782549b5136"
     ],
