@@ -299,24 +299,29 @@ const About = () => {
           <div className="hidden sm:block absolute -bottom-20 -right-20 w-64 h-64 bg-purple-900 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
           
           <div className="flex flex-col lg:flex-row gap-8 items-center">
+            
             <motion.div 
-              whileHover={{ scale: 1.02 }}
-              className="relative group w-full lg:w-1/2"
-            >
-              <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[32rem] rounded-3xl overflow-hidden border-4 border-blue-500/30 shadow-2xl z-10 transform transition duration-500 group-hover:shadow-blue-500/20">
-                <img 
-                  src="https://media-hosting.imagekit.io/e195aeebd1284614/WhatsApp%20Image%202025-04-14%20at%2014.26.15_a1165c67.jpg?Expires=1839402081&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=VL-~9nI-wKhzuXgrQA9ES1HfPuNXTIEFx4RXHfgBmbDL7vFiax3E0nnFtKLUmBZPMJ2L4E9oEzjuIpRfq7tLvB0Q~0BAMQonwLEFnKN6ITpvyLVZDtwowD4aedFxOOZ~RJggS3hASrn~AlCB7bPuTCe8nFUr1w-t7Jf7WPQ2m0yrb0jN1qFm8xKlGUt9lBsGU-yxq8ux2kkxwGGB4z7v0We7GH~oaCf2SJj1Y2dxLdTx0A9zWnr8hWPgRzgqFjtIGsWpH5HHoufXz9M1kr~fy187-uBonEHMuSMjgV~7QOD5uM7IqE-xB0~wjHPA~hbbILokHDL90k8jCXLxBK~fyw__"
-                  alt="Jagadeesh Vanganooru"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 via-blue-800/30 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 p-4 sm:p-8">
-                  <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">Jagadeesh Vanganooru</h1>
-                  <div className="text-sm sm:text-xl text-blue-300 font-mono">Full-Stack Developer</div>
-                </div>
-              </div>
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl opacity-0 group-hover:opacity-30 blur-xl transition duration-500 z-0"></div>
-            </motion.div>
+  whileHover={{ scale: 1.02 }}
+  className="relative group w-full lg:w-1/2"
+>
+  <div className="relative w-full aspect-[3/4] sm:aspect-[4/5] rounded-3xl overflow-hidden border-4 border-blue-500/30 shadow-2xl z-10 transform transition duration-500 group-hover:shadow-blue-500/20">
+    <img 
+      src="https://media-hosting.imagekit.io/e195aeebd1284614/WhatsApp%20Image%202025-04-14%20at%2014.26.15_a1165c67.jpg?Expires=1839402081&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=VL-~9nI-wKhzuXgrQA9ES1HfPuNXTIEFx4RXHfgBmbDL7vFiax3E0nnFtKLUmBZPMJ2L4E9oEzjuIpRfq7tLvB0Q~0BAMQonwLEFnKN6ITpvyLVZDtwowD4aedFxOOZ~RJggS3hASrn~AlCB7bPuTCe8nFUr1w-t7Jf7WPQ2m0yrb0jN1qFm8xKlGUt9lBsGU-yxq8ux2kkxwGGB4z7v0We7GH~oaCf2SJj1Y2dxLdTx0A9zWnr8hWPgRzgqFjtIGsWpH5HHoufXz9M1kr~fy187-uBonEHMuSMjgV~7QOD5uM7IqE-xB0~wjHPA~hbbILokHDL90k8jCXLxBK~fyw__"
+      alt="Jagadeesh Vanganooru"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 via-blue-800/30 to-transparent" />
+    <div className="absolute bottom-0 left-0 p-4 sm:p-6">
+      <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">Jagadeesh Vanganooru</h1>
+      <div className="text-xs sm:text-base md:text-lg text-blue-300 font-mono">Full-Stack Developer</div>
+    </div>
+  </div>
+  
+  {/* Glow effect */}
+  <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl opacity-0 group-hover:opacity-30 blur-xl transition duration-500 z-0"></div>
+  <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl opacity-0 group-hover:opacity-30 blur-xl transition duration-500 z-0"></div>
+</motion.div>
+
             
             <motion.div
               initial={{ opacity: 0, y: 20 }}
