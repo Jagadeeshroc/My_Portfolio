@@ -28,7 +28,7 @@ const Home = () => {
     
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/JagadeeshResume@5.pdf'; // Direct path from public folder
+        link.href = '/JagadeeshR@6.pdf'; // Direct path from public folder
         link.download = 'JagadeeshResume.pdf';
         document.body.appendChild(link);
         link.click();
