@@ -29,7 +29,7 @@ const Home = () => {
     
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/public/Jagadeesh_React_Fresher_Resume13.pdf'; // Direct path from public folderD:\P\p2\portfolio\public\Jagadeesh_React_Fresher_Resume13.pdf
+        link.href = '/public/Jagadeesh_14FullStack.pdf'; // Direct path from public folderD:\P\p2\portfolio\public\Jagadeesh_React_Fresher_Resume13.pdf
         link.download = 'JagadeeshResume.pdf';
         document.body.appendChild(link);
         link.click();
