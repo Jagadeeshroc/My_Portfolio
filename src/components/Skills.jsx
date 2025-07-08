@@ -18,28 +18,29 @@ const Skills = () => {
       category: "Frontend",
       skills: [
         { name: "React", level: 90, icon: "⚛️" },
-        { name: "JavaScript", level: 85, icon: "📜" },
+        { name: "JavaScript", level: 90, icon: "📜" },
         { name: "HTML5", level: 95, icon: "🖥️" },
         { name: "CSS3/Tailwind", level: 90, icon: "🎨" },
-        { name: "Bootstrap", level: 80, icon: "🅱️" },
+        { name: "Bootstrap", level: 85, icon: "🅱️" },
       ],
     },
     {
       category: "Backend",
       skills: [
-        { name: "Node.js", level: 75, icon: "🟢" },
-        { name: "Express", level: 70, icon: "🚂" },
-        { name: "Python", level: 65, icon: "🐍" },
-        { name: "MongoDB", level: 60, icon: "🍃" },
+        { name: "Node.js", level: 85, icon: "🟢" },
+        { name: "Express", level: 80, icon: "🚂" },
+        { name: "Python", level: 75, icon: "🐍" },
+        { name: "MongoDB", level: 80, icon: "🍃" },
       ],
     },
     {
       category: "Tools & Other",
       skills: [
         { name: "GitHub", level: 85, icon: "🔄" },
-        { name: "Figma", level: 55, icon: "✏️" },
+        { name: "Figma", level: 75, icon: "✏️" },
         { name: "Docker", level: 50, icon: "🐳" },
-        { name: "AWS", level: 40, icon: "☁️" },
+        { name: "AWS", level: 60, icon: "☁️" },
+        { name: "Canva", level: 70, icon: " ✏️" },
       ],
     },
   ];
@@ -144,7 +145,7 @@ const Skills = () => {
           variants={itemVariants}
           className="mt-16 bg-white-800 rounded-xl p-8 border border-gray-700"
         >
-          <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-orange-500">
+          <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-orange-500">
             My Expertise
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -167,6 +168,15 @@ const Skills = () => {
               </p>
             </motion.div>
             <motion.div 
+              whileHover={{ scale: 1.03 }}
+              className="bg-gray-700 p-6 rounded-lg border-l-4 border-green-500"
+            >
+              <h3 className="text-xl font-semibold mb-3 text-white">Backend development</h3>
+              <p className="text-gray-300">
+                I specialize in backend development, focusing on building scalable, secure, and efficient server-side logic. My work includes database design, API development, and cloud infrastructure management, ensuring that applications run smoothly and efficiently.
+              </p>
+            </motion.div>
+             <motion.div 
               whileHover={{ scale: 1.03 }}
               className="bg-gray-700 p-6 rounded-lg border-l-4 border-green-500"
             >

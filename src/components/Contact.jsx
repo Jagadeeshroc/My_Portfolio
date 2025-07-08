@@ -131,7 +131,7 @@ const Contact = () => {
                   </div>
                   <div className="ml-3 sm:ml-4">
                     <p className="text-xs sm:text-sm font-medium text-gray-400">Location</p>
-                    <p className="text-sm sm:text-lg font-semibold text-white">Ananthapur, AP</p>
+                    <p className="text-sm sm:text-lg font-semibold text-white">Ananthapur , Andhra Pradesh</p>
                   </div>
                 </div>
               </div>

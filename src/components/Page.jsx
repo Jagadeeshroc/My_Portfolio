@@ -93,8 +93,8 @@ const Page = () => {
             
             <div className="relative z-10 text-center px-4 max-w-4xl">
                 {/* Animated heading */}
-                <h1 className="font-['Lavishly_Yours'] text-5xl md:text-7xl mb-6 animate-fade-in bg-gradient-to-r from-red-500 via-yellow-600 to-green-600 bg-clip-text text-transparent animate-gradient-x">
-    Welcome to My Creative Space
+                <h1 className="font-['Lavishly_Yours'] text-5xl md:text-7xl m-5 pb-6 animate-fade-in bg-gradient-to-r from-red-500 via-yellow-600 to-green-600 bg-clip-text text-transparent animate-gradient-x">
+    Welcome To My Creative Space
 </h1>
                 
                 {/* Improved text with animation */}

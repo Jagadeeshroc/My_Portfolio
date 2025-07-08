@@ -11,6 +11,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 import Skills from './components/Skills';
 import SignOut from './components/SignOut';
+import Resume from './components/Resume';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/signout" element={<SignOut/>} />
+          <Route path="/resume" element={<Resume/>} />
         </Routes>
       </BrowserRouter>
     </>

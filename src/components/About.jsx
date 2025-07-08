@@ -188,9 +188,9 @@ const About = () => {
       degree: "Bachelor of Technology in Computer Science",
       University: "Sri Krishnadevaraya University",
       institution: "JCNRM Degree College",
-      year: "2020 - 2024",
+      year: "2021 - 2024",
       icon: <FaUniversity className="text-purple-500" />,
-      description: "Specialized in Web Technologies and Software Architecture with 7-%",
+      description: "Specialized in Web Technologies and Software Architecture with 70%",
       highlights: [
         "Focus on COMPUTER SCIENCE,ELECTRONICS,MATHEMATICS",
       ],
@@ -203,7 +203,7 @@ const About = () => {
       icon: <FaGraduationCap className="text-blue-500" />,
       description: "Focus on Mathematics and Computer Science with 6.34G.PA",
       highlights: [
-        "mATHEMATICS , PHYSICS,CHEMISTRY",
+        "MATHEMATICS , PHYSICS,CHEMISTRY",
       ],
       image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     }
@@ -247,12 +247,6 @@ const About = () => {
   ];
 
   const collegeMemories = [
-    {
-      title: "Tech Fest Lead",
-      description: "Organized college tech fest with 100+ participants",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      year: "2023"
-    },
     {
       title: "Data Representation",
       description: "Developed AI-based solution for Data Representation project",
@@ -306,7 +300,7 @@ const About = () => {
 >
   <div className="relative w-full aspect-[3/4] sm:aspect-[4/5] rounded-3xl overflow-hidden border-4 border-blue-500/30 shadow-2xl z-10 transform transition duration-500 group-hover:shadow-blue-500/20">
     <img 
-      src="https://media-hosting.imagekit.io/e195aeebd1284614/WhatsApp%20Image%202025-04-14%20at%2014.26.15_a1165c67.jpg?Expires=1839402081&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=VL-~9nI-wKhzuXgrQA9ES1HfPuNXTIEFx4RXHfgBmbDL7vFiax3E0nnFtKLUmBZPMJ2L4E9oEzjuIpRfq7tLvB0Q~0BAMQonwLEFnKN6ITpvyLVZDtwowD4aedFxOOZ~RJggS3hASrn~AlCB7bPuTCe8nFUr1w-t7Jf7WPQ2m0yrb0jN1qFm8xKlGUt9lBsGU-yxq8ux2kkxwGGB4z7v0We7GH~oaCf2SJj1Y2dxLdTx0A9zWnr8hWPgRzgqFjtIGsWpH5HHoufXz9M1kr~fy187-uBonEHMuSMjgV~7QOD5uM7IqE-xB0~wjHPA~hbbILokHDL90k8jCXLxBK~fyw__"
+      src="/assets/IMG_20250621_131258.png"
       alt="Jagadeesh Vanganooru"
       className="w-full h-full object-cover"
     />
@@ -560,7 +554,7 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4 md:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4 md:gap-6 ">
             {techStack.map((tech, index) => (
               <motion.div
                 key={index}
@@ -575,7 +569,7 @@ const About = () => {
                 <div className="text-3xl sm:text-4xl md:text-5xl mb-2 sm:mb-3 hover:text-blue-400 transition-colors">
                   {tech.icon}
                 </div>
-                <span className="text-xs sm:text-sm font-semibold text-white">{tech.name}</span>
+                <span className="text-xs sm:text-sm font-semibold text-gray-900">{tech.name}</span>
               </motion.div>
             ))}
           </div>

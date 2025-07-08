@@ -1,7 +1,10 @@
 import React from "react";
+import { useState } from "react";
 import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope, FaMapMarkerAlt, FaBriefcase, FaGraduationCap } from "react-icons/fa";
+import'tailwindcss'
 
 const Profile = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const profileData = {
     name: "Vanganooru Jagadeesh",
     title: "full Stack Developer",
@@ -46,14 +49,42 @@ const Profile = () => {
         {/* Profile Card */}
         <div className="bg-white rounded-xl shadow-lg overflow-hidden">
           {/* Header Section */}
-          <div className="h-full w-full object-cover bg-[url('https://media-hosting.imagekit.io/f61b62ab1cc848a2/Untitled%20design%20(2).png?Expires=1838050228&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=VSjdqZ2P4i~EmFxHt9tXiojmOIoxZqQcszdqGdJrp3VAGiQ7tNndOO80u7EWs2hppDNf5pdWyNh4jjC62fnnCWDIUrbeEWlAR8ylJRgd9TY4ILSCXfaNLdZALb5cQXLHAXgzsWicqBokNzxqEre6SLtPXjz7A9pg-ouwaW8Xsv2CGtn1OM7ltfOpvvHpgTnzhkauw9CWuU6S85El4BbiKa-rMZBG0DsnFcNTQksfHqzWUkUXAmZEv8XoLMlPvActj4jOOqdQyGjvnBen3fq2Spz1BoEAbuyn6b37RcaZKrG5ClCWbk6XLkdjWgNFD07KtBvsNV~qZX4Z7-2XZQEqWw__')]  p-8 text-white">
+       <div className="h-full w-full object-cover bg-[url('/assets/eagleFull.png')] p-8 text-white">
             <div className="flex flex-col md:flex-row items-center">
               <div className="w-32 h-32 rounded-full border-4 border-white shadow-lg overflow-hidden mb-4 md:mb-0 md:mr-6">
-                <img 
-                  src="https://media-hosting.imagekit.io/67342460522843ad/WhatsApp%20Image%202025-04-14%20at%2014.26.15_990c9825.jpg?Expires=1839232318&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=bW4u~gJOwdZTq0iyUAIuLCBFDKgU6ZfNZ3BuqEDutMk0CDtLT1ytUYQsjxZgR03Pa9tUsJiaZKf0nVx2moTVJmggRx~aVui5aWBL-p0quYUPsqAbrrLayjjgFLVgdaMt1hQpufp6S8S90ySEXAx38b7Lc3AjanOErrkWcFDZrGJhNxW9-pCywoh1czw35wNZ6kKHvjJLV3~wf1l-LSXP~YgBySMGVGn3vKR22nGM0BfUtPB4njLQEpngQvLRekRq4S7x~XwPQ-7OK-moYHWLPx51YLj2ABTBqBUfnLALgbE5QkKJldofNTq8W567sWbcIkuiTbGTEWykFUG09ell8A__" 
-                  alt="Profile"
-                  className="w-full h-full object-cover"
-                />
+                 <img
+        src="\assets\IMG_20250621_131258.png"
+        alt="Profile"
+        className="w-full h-full object-cover cursor-pointer"
+        onClick={() => setIsOpen(true)}
+      />
+
+      {/* Modal */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+          onClick={() => setIsOpen(false)}
+        >
+          {/* Close button */}
+          <button
+            className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-gray-300"
+            onClick={(e) => {
+              e.stopPropagation(); // Prevent closing when clicking the button itself
+              setIsOpen(false);
+            }}
+          >
+            &times; {/* HTML entity for X */}
+          </button>
+
+          {/* Enlarged image */}
+          <img
+            src="\assets\IMG_20250621_131258.png"
+            alt="Enlarged"
+            className="max-w-full max-h-full rounded shadow-lg"
+            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking the image
+          />
+        </div>
+      )}
               </div>
               <div>
                 <h1 className="text-3xl font-bold">{profileData.name}</h1>

@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaFileDownload } from 'react-icons/fa'
 import { SiLeetcode } from 'react-icons/si';
 import 'tailwindcss'
 
+
 const roles = [
     'Frontend Developer',
     'Full Stack Developer',
@@ -28,7 +29,7 @@ const Home = () => {
     
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/JagadeeshR@6.pdf'; // Direct path from public folder
+        link.href = '/public/Jagadeesh_React_Fresher_Resume13.pdf'; // Direct path from public folderD:\P\p2\portfolio\public\Jagadeesh_React_Fresher_Resume13.pdf
         link.download = 'JagadeeshResume.pdf';
         document.body.appendChild(link);
         link.click();
@@ -94,9 +95,9 @@ const Home = () => {
                     <div className="flex-1 min-w-[280px] flex justify-center order-1 lg:order-2 lg:ml-10">
                         <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80">
                             <img 
-                                src="https://media-hosting.imagekit.io/6d5419bef4394484/Web_Photo_Editor%20(2).jpg?Expires=1839224679&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Inbg-FVXLQSig-G~Uet0cDtXUX3j15Rs107~9qNtdvBpNDxxCR1XZAtTT3dYRcmQeNBe7v53liX5to-mMJLSkZZkoEBqvNvizPfx8sRIDh2aasl4-EZLY-IP~eQ7BYzkwDiGHb8GwNA67ONZIKVaT9pdmtOA2isLBI55rkgDi5Fp8HZ4XmAvp0bb5bbV69f85-rge1r3CdKWL-4sNA8LwQlYl0JZupQ8GnvPtcBUQYYHmDDrgs01uVxhUzm0kAokrR0r9w9eF7mXCgftJmX8WnFsuPEqF9ypsWbjIIySiVIfQOfZqP3WbfOcs5tCMSIJXgoelMrQmVQIipg4qiCqjA__" 
+                                src="assets/photo1.png" 
                                 alt="Profile" 
-                                className="w-full h-full object-cover rounded-full border-6 sm:border-8 border-white shadow-xl relative z-10" 
+                                className="w-full h-full object-cover rounded-full border-6 sm:border-8 border-white shadow-2xl relative z-10  rotate-x-0 rotate-z-360 transform transition-transform duration-500 hover:rotate-x-0 hover:rotate-z-0 shadow-cyan-500/100" 
                             />
                             <div className="absolute w-full h-full top-0 left-0 rounded-full border-6 sm:border-8 border-blue-500 rotate-45 animate-spin-slow"></div>
                         </div>
