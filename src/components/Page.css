@@ -1,4 +1,7 @@
 /* Snow Flower Animation - Responsive Version */
+.page-container {
+background:#06392f;
+}
 .snow-flower {
     position: fixed;
     top: -10%;
@@ -8,6 +11,7 @@
     pointer-events: none;
     animation: falling linear infinite;
     font-size: 1rem;
+
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
   }
   

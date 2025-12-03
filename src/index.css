@@ -1,9 +1,7 @@
 
 
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 
 @keyframes gradient-shift {
@@ -52,4 +50,53 @@
   .hide-scrollbar::-webkit-scrollbar {
     display: none;  /* Chrome, Safari and Opera */
   }
-  
+  @keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { text-shadow: 0 0 10px rgba(255,255,255,0.8); }
+  50% { text-shadow: 0 0 20px rgba(0,255,255,0.9); }
+}
+
+.bg-animated-layer::before {
+    /* Define the falling elements and colors */
+    content: "🌸 ❄ ❅ ❆ 🌸 ❄ ❅ ❆ 🌸 ❄ ❅ ❆ 🌸 ❄ ❅ ❆ ❄ ❅ ❆"; 
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    white-space: pre; 
+    user-select: none;
+    pointer-events: none;
+    
+    /* Apply the custom animation defined in tailwind.config.js */
+    animation: falling-shadows-bg; 
+    
+    /* Manually create many shadow instances to simulate hundreds of particles.
+       Adjust positions (X Y) and number of lines for density/coverage.
+    */
+    text-shadow: 
+        -100px 100px 5px rgba(255, 255, 255, 0.5),
+        200px 200px 5px rgba(255, 255, 255, 0.5),
+        -50px 350px 5px rgba(255, 255, 255, 0.5),
+        300px 500px 5px rgba(255, 255, 255, 0.5),
+        -250px 650px 5px rgba(255, 255, 255, 0.5),
+        150px 800px 5px rgba(255, 255, 255, 0.5),
+        -500px 950px 5px rgba(255, 255, 255, 0.5),
+        100px 1100px 5px rgba(255, 255, 255, 0.5),
+        -300px 1250px 5px rgba(255, 255, 255, 0.5),
+        400px 1400px 5px rgba(255, 255, 255, 0.5),
+        /* ... add more lines here ... */; 
+}
+
+/* 3. Custom Font Styles (For reference, if you haven't linked them globally) */
+.font-['Lavishly_Yours'] {
+    font-family: 'Lavishly Yours', cursive;
+}
+.font-[Underdog] {
+    font-family: 'Underdog', cursive;
+}

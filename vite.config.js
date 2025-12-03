@@ -14,7 +14,10 @@ export default defineConfig({
         manualChunks: {  // Example chunking strategy
           react: ['react', 'react-dom'],
         }
-      }
+      },
+      optimizeDeps: {
+    include: ['ogl'],
+  },
     }
   }
 })

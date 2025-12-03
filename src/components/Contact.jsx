@@ -8,17 +8,17 @@ const Contact = () => {
   const [isSending, setIsSending] = useState(false);
   const form = useRef();
 
-  useEffect(() => {
-    const handleScroll = (e) => {
-      e.preventDefault();
-    };
+  // useEffect(() => {
+  //   const handleScroll = (e) => {
+  //     e.preventDefault();
+  //   };
 
-    window.addEventListener('scroll', handleScroll, { passive: false });
+  //   window.addEventListener('scroll', handleScroll, { passive: false });
     
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
   const sendEmail = async (e) => {
     e.preventDefault();

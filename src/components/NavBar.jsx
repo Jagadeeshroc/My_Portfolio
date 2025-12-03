@@ -16,8 +16,8 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-white shadow-sm">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <Disclosure as="nav" className="bg-r shadow-sm">
+      <div className="mx-auto  max-w-7xl px-2 sm:px-6 lg:px-8"      >
         <div className="flex h-16 items-center justify-between">
           {/* Left side - logo and navigation */}
           <div className="flex items-center">

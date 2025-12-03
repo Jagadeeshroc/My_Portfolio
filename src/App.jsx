@@ -1,4 +1,5 @@
 import './App.css'
+import "./index.css"; 
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import {BrowserRouter,Route,Routes} from 'react-router-dom';
@@ -12,6 +13,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import SignOut from './components/SignOut';
 import Resume from './components/Resume';
+import Galaxy from './components/Galaxy/Galaxy';
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/signout" element={<SignOut/>} />
           <Route path="/resume" element={<Resume/>} />
+          <Route path="/galaxy" element={<Galaxy/>} />
         </Routes>
       </BrowserRouter>
     </>

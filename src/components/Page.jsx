@@ -87,7 +87,7 @@ const Page = () => {
         
    
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center  bg-cover bg-center relative overflow-hidden">
+        <div className="min-h-screen flex flex-col items-center justify-center  bg-cover bg-center relative overflow-hidden page-container" >
             {/* Overlay for better text readability */}
             <div className="absolute inset-0  backdrop-blur-sm"></div>
             
@@ -122,7 +122,7 @@ const Page = () => {
             </div>
             
             {/* Animated scrolling indicator */}
-            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce onClick={() => navigate('/home')} cursor-pointer">
+            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce } cursor-pointer" onClick={() => navigate('/home')}>
                 <svg className="w-8 h-8 text-black-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                 </svg>
