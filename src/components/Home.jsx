@@ -38,7 +38,7 @@ const Home = () => {
   // Function to handle resume download
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Jagadeesh_14FullStack.pdf"; 
+    link.href = "/_ JAGADEESH VANGANOORU - Resume (2) (3).pdf"; 
     link.download = "JagadeeshResume.pdf";
     document.body.appendChild(link);
     link.click();
@@ -131,10 +131,10 @@ const Home = () => {
                   loop 
                   muted={isMuted} // Controlled by state
                   playsInline 
-                  className="w-full h-full object-cover rounded-full border-4 border-white shadow-2xl relative z-10"
+                  className="w-full h-full object-cover rounded-tr-4xl rounded-bl-4xl border-4 border-white shadow-2xl relative z-10"
                 >
                   <source 
-                    src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" // Placeholder URL
+                    src="video/invideo-ai-1080 MERN Mastery_ 30s Futuristic 3D Intro 2025-12-04.mp4" 
                     type="video/mp4" 
                   />
                   Your browser does not support the video tag.
