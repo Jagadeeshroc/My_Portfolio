@@ -87,7 +87,7 @@ const Page = () => {
         
    
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center  bg-cover bg-center relative overflow-hidden page-container" >
+        <div className="min-h-screen flex flex-col items-center justify-center  bg-cover bg-center relative overflow-hidden" >
             {/* Overlay for better text readability */}
             <div className="absolute inset-0  backdrop-blur-sm"></div>
             

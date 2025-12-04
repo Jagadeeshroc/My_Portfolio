@@ -14,6 +14,7 @@ import Skills from './components/Skills';
 import SignOut from './components/SignOut';
 import Resume from './components/Resume';
 import Galaxy from './components/Galaxy/Galaxy';
+import ThreeDHome from './components/ThreeDHome';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/signout" element={<SignOut/>} />
           <Route path="/resume" element={<Resume/>} />
           <Route path="/galaxy" element={<Galaxy/>} />
+          <Route path="/Anim" element={<ThreeDHome/>} />
         </Routes>
       </BrowserRouter>
     </>

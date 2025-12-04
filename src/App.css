@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+
+/* --- 3D Background Container --- */
+#canvas {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1; /* Ensure it stays behind the hero content */
+}

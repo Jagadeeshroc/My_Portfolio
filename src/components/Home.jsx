@@ -17,6 +17,7 @@ const roles = [
 const GalaxyBackground = lazy(() => import("./galaxy/Galaxy"));
 
 // Helper component for cleaner social icon rendering
+// eslint-disable-next-line no-unused-vars
 const SocialIcon = ({ href, icon: Icon }) => (
   <a 
     href={href} 
