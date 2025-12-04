@@ -122,7 +122,7 @@ const Home = () => {
 
             {/* Right Video Profile */}
             <div className="flex-1 min-w-[280px] flex justify-center order-1 lg:order-2">
-              <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+              <div className="relative w-75 h-64 sm:w-150 sm:h-80 lg:w-220 lg:h-96">
                 
                 {/* 📹 THE VIDEO ELEMENT 📹 */}
                 <video 
@@ -131,7 +131,7 @@ const Home = () => {
                   loop 
                   muted={isMuted} // Controlled by state
                   playsInline 
-                  className="w-full h-full object-cover rounded-tr-4xl rounded-bl-4xl border-4 border-white shadow-2xl relative z-10"
+                  className="w-full h-full object-cover rounded-4xl border-1 border-white shadow-2xl relative z-10"
                 >
                   <source 
                     src="video/invideo-ai-1080 MERN Mastery_ 30s Futuristic 3D Intro 2025-12-04.mp4" 
@@ -152,10 +152,10 @@ const Home = () => {
                 </button>
 
                 {/* Subtle, pulsing border animation remains */}
-                <div 
+                {/* <div 
                   className="absolute w-full h-full top-0 left-0 rounded-full border-4 border-indigo-500 animate-pulse-slow z-0"
                   style={{ animationDuration: '6s' }} 
-                ></div>
+                ></div> */}
               </div>
             </div>
           </div>
