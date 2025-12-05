@@ -107,7 +107,7 @@ const EDUCATION_DATA = [
     icon: <FaUniversity className="text-purple-500" />,
     description: "Specialized in Web Technologies and Software Architecture with 70%",
     highlights: ["Focus on COMPUTER SCIENCE, ELECTRONICS, MATHEMATICS"],
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    image: "/assets/download.jpeg"
   },
   {
     degree: "Intermediate (12th Grade)",
