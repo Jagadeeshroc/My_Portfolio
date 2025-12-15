@@ -111,6 +111,33 @@ export const projects = [
       }
     ]
   },
+   {
+    id: "GTG-Perfumes-Task By Cube Company",
+    title: "GTG-Perfumes-Product Perfumes",
+    description: "A full-featured online store with products Perfumes, THis is Task given by cube company",
+    technologies: ["HTML","CSS", "Javascript"],
+    images: [
+      "/assets/GTGPerfume-cubeCompany/Screenshot 2025-12-11 194205.png",
+       "/assets/GTGPerfume-cubeCompany/Screenshot 2025-12-11 194225.png",
+        "/assets/GTGPerfume-cubeCompany/Screenshot 2025-12-11 194241.png",
+         "/assets/GTGPerfume-cubeCompany/Screenshot 2025-12-11 194305.png",
+          "/assets/GTGPerfume-cubeCompany/Screenshot 2025-12-11 194330.png",
+           "/assets/GTGPerfume-cubeCompany/Screenshot 2025-12-11 194358.png",
+            "/assets/GTGPerfume-cubeCompany/Screenshot 2025-12-11 194419.png",
+             "/assets/GTGPerfume-cubeCompany/Screenshot 2025-12-11 195325.png"
+             ],
+     
+    video: "",
+    features: [
+      "Products of Perfumes"
+    ],
+    challenges: [
+      {
+        challenge: "Managing complex state across components",
+        solution: "Implemented Redux for centralized state management"
+      }
+    ]
+  },
   
   
   {
@@ -210,15 +237,15 @@ export const projects = [
   ]
 },
  {
-  "id": "whatsapp-clone",
-  "title": "WhatsApp Web Clone",
-  "description": "A real-time messaging application with WhatsApp-like functionality including chat, media sharing, and read receipts.",
+  "id": "Vlogs-NewPaper",
+  "title": "Vlogs-New Paper ",
+  "description": "A real-time News and Self Vlogs application with daily updates-like functionality including chat, media sharing, and read articles.",
   "technologies": ["React", "Node.js", "Socket.io", "Tailwind CSS"],
   "video": "",
   "images": [
     "/assets/images.png",
-    "/assets/whatsapp-clone-2.png",
-    "/assets/whatsapp-clone-3.png"
+    // "/assets/whatsapp-clone-2.png",
+    // "/assets/whatsapp-clone-3.png"
   ],
   "features": [
     "Real-time messaging with Socket.io",

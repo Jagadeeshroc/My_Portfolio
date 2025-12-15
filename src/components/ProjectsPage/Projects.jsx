@@ -27,7 +27,7 @@ const cardVariants = {
 
 const Projects = () => {
   return (
-    <div className="min-h-screen bg-gray-900 py-16 px-4 sm:px-6 lg:px-8 font-sans">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-gray-200 py-16 px-4 sm:px-6 lg:px-8 font-sans">
       <div className="max-w-7xl mx-auto">
         
         {/* --- Header Section --- */}
@@ -40,7 +40,7 @@ const Projects = () => {
           <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 mb-6">
             My Portfolio
           </h1>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-black via-red-900 to-black font-bold max-w-2xl mx-auto leading-relaxed">
             A collection of my recent work. Each project represents a journey of 
             solving complex problems with modern technologies.
           </p>
